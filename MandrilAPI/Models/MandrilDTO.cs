@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace MandrilAPI.Models;
+public class MandrilDTO
+{
+    public string Nombre { get; set; } = string.Empty;
+    public string Apellido { get; set; } = string.Empty;
+
+    public List<Habilidad> Habilidades { get; set; } = [];
+        
+}
