@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using MandrilAPI.Helpers;
 using MandrilAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -73,7 +73,7 @@ public class MandrilService
     {
         mandril = Mandriles.FirstOrDefault(m => m.Id == mandrilId);
         if (mandril == null)
-            return new NotFoundObjectResult("Mandril no encontrado");
+            return new NotFoundObjectResult(Messages.Mandril.NotFound);
         return null;
     }
 }

@@ -18,7 +18,7 @@ public class MandrilController : ControllerBase
     {
         return Ok(MandrilService.Instance.Mandriles);
     }
-
+///asd
     [HttpGet("{mandrilId}")]
     public ActionResult<Mandril> GetById(int mandrilId)
     {
